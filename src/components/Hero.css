@@ -103,7 +103,7 @@
   .hero-text-box h1 {
     font-size: 2em; /* Reduz o tamanho da frase de boas-vindas */
     white-space: nowrap; /* Impede a quebra de linha */
-    margin-left: -80px;
+    margin-left: -90px;
   }
 
   .hero-text-box p {
