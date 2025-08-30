@@ -1,0 +1,82 @@
+/* src/components/Contato.css */
+
+.contact-layout-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1000px;
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Ocupa todo o espaço vertical disponível */
+}
+
+.contact-form-container {
+  width: 1000px;
+  max-height: 500px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.contact-form .form-control {
+  border-radius: 4px;
+  font-size: 0.9em;
+  padding: 4px;
+}
+
+.contact-info-box {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-info-box h4 {
+  font-weight: bold;
+}
+
+.contact-info-box .small-text {
+  font-size: 0.8em;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 3.5em;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon.whatsapp {
+  color: #25D366;
+}
+
+.social-icon.instagram {
+  color: #E1306C;
+}
+
+.social-icon.phone {
+  color: #007bff;
+}
+
+h2 {
+    text-align: left;
+}

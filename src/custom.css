@@ -1,0 +1,54 @@
+/* src/custom.css */
+
+/* Reset básico para garantir consistência */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Padrão */
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #ffffff;
+  --text-dark-color: #333333;
+  --text-light-color: #f1f1f1;
+}
+
+html, body, #root, .App-container {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.page-content {
+  flex-grow: 1;
+}
+
+/* Estilo do botão CTA */
+.btn-cta {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: white;
+  color: #007bff;
+}

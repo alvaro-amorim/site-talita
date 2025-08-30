@@ -1,0 +1,58 @@
+/* src/components/Footer.css */
+
+.footer-section {
+  background-color: #f1f1f1;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons .icon {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-icons a:hover .icon {
+  color: #007bff;
+}
+
+.footer-chat-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.footer-chat-icon .icon {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-chat-icon:hover .icon {
+  color: #007bff;
+}
+
+.chat-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.icon-flipped {
+  transform: scaleX(-1);
+}

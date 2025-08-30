@@ -1,0 +1,8 @@
+/* src/components/GaleriaModal.css */
+.modal-personalizado .modal-dialog {
+  max-width: 60% !important;
+}
+
+.modal-personalizado .modal-content {
+  background-color: #fff;
+}
