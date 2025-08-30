@@ -61,26 +61,12 @@
   width: 100%;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .hero-content-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-image-container {
-    position: static;
-    transform: none;
-    margin-bottom: 20px;
-  }
-  .hero-text-box {
-    margin-left: 0;
-  }
-}
 .hero-text-box p {
   text-indent: 2em;
   line-height: 1.6; /* melhora a leitura */
   text-align: justify; /* deixa alinhado nas margens */
 }
+
 .hero-text-box h1 {
   text-indent: 80px;
   white-space: nowrap;
@@ -94,26 +80,31 @@
     flex-direction: column;
     text-align: center;
   }
+
   .hero-image-container {
     position: static;
     transform: none;
     margin-top: 100px;
     margin-bottom: 20px;
   }
+
   .hero-corretora-logo {
     margin-top: -80px;
     width: 300px; /* Reduz o tamanho da foto */
     height: 300px;
   }
+
   .hero-text-box {
     margin-left: 0;
     padding: 1rem;
   }
+
   .hero-text-box h1 {
     font-size: 2em; /* Reduz o tamanho da frase de boas-vindas */
     white-space: nowrap; /* Impede a quebra de linha */
     margin-left: -40px;
   }
+
   .hero-text-box p {
     font-size: 0.9em;
   }
