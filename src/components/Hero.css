@@ -101,8 +101,9 @@
     margin-bottom: 20px;
   }
   .hero-corretora-logo {
-    width: 200px; /* Reduz o tamanho da foto */
-    height: 200px;
+    margin-top: -80px;
+    width: 300px; /* Reduz o tamanho da foto */
+    height: 300px;
   }
   .hero-text-box {
     margin-left: 0;

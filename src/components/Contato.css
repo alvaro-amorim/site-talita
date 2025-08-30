@@ -9,7 +9,7 @@
   margin-top: 0px;
   margin-left: 50px;
   margin-bottom: 20px;
-  flex-grow: 1; /* Ocupa todo o espaço vertical disponível */
+  flex-grow: 1;
 }
 
 .contact-form-container {
@@ -78,5 +78,43 @@
 }
 
 h2 {
-    text-align: left;
+  text-align: left;
+}
+
+/* ======================= */
+/*  Responsividade Mobile  */
+/* ======================= */
+
+@media (max-width: 992px) {
+  .contact-layout-container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact-form-container {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .contact-info-box {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-container,
+  .contact-info-box {
+    padding: 20px;
+  }
+
+  .social-icons-container {
+    gap: 20px;
+  }
+
+  .social-icon {
+    font-size: 2.5em;
+  }
 }
