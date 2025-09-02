@@ -25,7 +25,7 @@ function Hero() {
         <div className="container hero-text-box p-5">
           <h1 className="display-4 fw-bold">Seja bem-vindo(a)!</h1>
           <p>
-            Sou corretora de imóveis e minha missão é ajudá-lo(a) na busca do imóvel adequado ao seu conforto e de sua família. Atuo diretamente com as mais conceituadas Construtoras da cidade de São Paulo e estou pronta a lhe oferecer as melhores ofertas de custo-benefício, seja para moradia ou investimento. <br></br><br></br>LANÇAMENTOS, APARTAMENTOS NOVOS OU EM CONSTRUÇÃO VOCÊ ENCONTRA AQUI!
+            Sou corretora de imóveis e advogada, e minha missão é ajudá-lo(a) na busca pelo imóvel ideal para o conforto e bem-estar da sua família. <br></br>Atuo em parceria com as mais conceituadas construtoras da cidade de São Paulo e estou pronta para oferecer as melhores oportunidades em custo-benefício, seja para moradia ou investimento. <br></br><br></br>LANÇAMENTOS, APARTAMENTOS NOVOS OU EM CONSTRUÇÃO VOCÊ ENCONTRA AQUI!
           </p>
           <button className="btn-cta mt-4 hero-button-container" onClick={handleClick}>ENCONTRE SEU PRÓXIMO IMÓVEL</button>
         </div>

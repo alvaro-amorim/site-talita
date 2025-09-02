@@ -39,7 +39,7 @@ function Contato() {
               Sua mensagem foi enviada com sucesso!
             </div>
           ) : (
-            <form onSubmit={handleSubmit} action="https://formspree.io/f/seu-id-do-formspree" method="POST" className="contact-form">
+            <form onSubmit={handleSubmit} action="https://formspree.io/f/mandbrrj" method="POST" className="contact-form">
               <div className="form-group mb-3">
                 <label htmlFor="name">Nome:</label>
                 <input type="text" id="name" name="name" className="form-control" required />

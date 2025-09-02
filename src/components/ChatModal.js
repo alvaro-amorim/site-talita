@@ -34,7 +34,7 @@ function ChatModal({ show, onClose }) {
         <button className="close-button" onClick={onClose}>&times;</button>
         <h3>Fale Comigo</h3>
         <p>Preencha o formulário e entro em contato com você o mais breve possível!</p>
-        <form onSubmit={handleSubmit} action="https://formspree.io/f/seu-id-do-formspree" method="POST">
+        <form onSubmit={handleSubmit} action="https://formspree.io/f/mandbrrj" method="POST">
           <div className="form-group">
             <label htmlFor="name">Nome:</label>
             <input type="text" id="name" name="name" required />
