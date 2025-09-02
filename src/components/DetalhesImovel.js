@@ -6,6 +6,7 @@ import { FaPlusCircle, FaDownload } from 'react-icons/fa';
 import GaleriaModal from './GaleriaModal';
 import './DetalhesImovel.css';
 
+// Importe todas as imagens necessárias.
 import imovelA1 from '../assets/imovel-A-1.jpg';
 import imovelA2 from '../assets/imovel-A-2.jpg';
 import imovelA3 from '../assets/imovel-A-3.jpg';
@@ -23,8 +24,8 @@ import lancamento1 from '../assets/lancamento1.jpg';
 import lancamento2 from '../assets/lancamento2.jpg';
 import lancamento3 from '../assets/lancamento3.jpg';
 
-// --- Texto publicitário único ---
-const anuncioBlueMarine = `
+// --- NOVO: Texto publicitário exclusivo para cada imóvel ---
+const anuncioImovelA = `
 ✨ Blue Marine Home Resort ✨
 Viva como se estivesse de férias todos os dias, a apenas 4 minutos do metrô São Judas e 6 minutos de Congonhas.
 Studios a 3 dormitórios em um condomínio completo, com piscina de 25m, coworking, coliving, áreas gourmet, academia e lazer de resort.
@@ -35,8 +36,40 @@ Um verdadeiro refúgio urbano no coração da Zona Sul de São Paulo.
 Blue Marine – entregue-se ao azul.
 `;
 
-// --- Especificações técnicas estruturadas ---
-const especificacoesBlueMarine = {
+const anuncioImovelB = `
+🏢 **Lançamento Villa Nova** 🏢
+Localização privilegiada na Vila Olímpia. Próximo a centros comerciais, parques e com fácil acesso às principais vias da cidade. 
+Apartamentos de 2 e 3 dormitórios com plantas inteligentes e área de lazer completa.
+`;
+
+const anuncioImovelC = `
+🏡 **Residencial Jardim das Flores** 🏡
+Oásis de tranquilidade no Brooklin. Apartamentos de alto padrão com varanda gourmet e vista para o verde. 
+Infraestrutura completa com piscina aquecida, quadra de tênis e salão de festas.
+Perfeito para quem busca conforto e qualidade de vida.
+`;
+
+// O texto para os outros imóveis segue o mesmo padrão.
+const anuncioImovelD = `
+🏙️ **Skyline Residences** 🏙️
+Modernidade e sofisticação no centro de São Paulo. Studios e apartamentos de 1 dormitório projetados para a vida moderna. 
+Áreas comuns com rooftop, academia e espaço de co-working. Uma oportunidade única para investidores.
+`;
+
+const anuncioImovelE = `
+🌿 **Parque das Árvores** 🌿
+Apartamentos de 3 e 4 suítes, com vista deslumbrante para a Serra da Cantareira. 
+Um projeto que une natureza e design, com espaços amplos e áreas de lazer pensadas para toda a família. Viva cercado pela natureza sem abrir mão da comodidade da cidade.
+`;
+
+const anuncioImovelF = `
+🌅 **Sunset Towers** 🌅
+Vistas espetaculares e pôr do sol inesquecível todos os dias. Localizado na orla de Santos, o Sunset Towers oferece o máximo em conforto e luxo. 
+Apartamentos de 2 a 4 dormitórios com amplas varandas e lazer de clube. O paraíso é aqui!
+`;
+
+// --- NOVO: Especificações técnicas exclusivas para cada imóvel ---
+const especificacoesImovelA = {
     "Geral": {
         "Área do terreno": "5.006,15 m²",
         "Torres": "1",
@@ -81,55 +114,177 @@ const especificacoesBlueMarine = {
     ]
 };
 
-// --- Dados dos imóveis A a F (todos herdam Blue Marine) ---
+const especificacoesImovelB = {
+    "Geral": {
+        "Área do terreno": "3.500 m²",
+        "Torres": "2",
+        "Pavimentos": "20 andares",
+        "Total de unidades": "250",
+    },
+    "Tipologias": {
+        "2 dormitórios": "90 unidades (1 vaga)",
+        "3 dormitórios": "160 unidades (2 vagas)",
+    },
+    "Áreas comuns": [
+        "Piscina adulto e infantil",
+        "Academia completa",
+        "Salão de festas",
+        "Churrasqueira",
+        "Quadra poliesportiva",
+        "Espaço Pet"
+    ],
+    "Diferenciais": [
+        "Gerador de energia para áreas comuns",
+        "Reaproveitamento de água da chuva",
+        "Medição de água e gás individualizada"
+    ]
+};
+
+const especificacoesImovelC = {
+    "Geral": {
+        "Área do terreno": "6.200 m²",
+        "Torres": "3",
+        "Total de unidades": "300",
+    },
+    "Tipologias": {
+        "3 dormitórios (100 m²)": "150 unidades",
+        "4 dormitórios (130 m²)": "150 unidades",
+    },
+    "Áreas comuns": [
+        "Piscina com raia de 25m",
+        "Quadra de tênis oficial",
+        "Salão de festas com espaço gourmet",
+        "Brinquedoteca e playground",
+        "Sauna e sala de massagem"
+    ],
+    "Diferenciais": [
+        "Varanda gourmet com churrasqueira a carvão",
+        "Infraestrutura para ar-condicionado",
+        "Fechadura biométrica na porta social"
+    ]
+};
+
+const especificacoesImovelD = {
+    "Geral": {
+        "Área do terreno": "2.800 m²",
+        "Torres": "1",
+        "Total de unidades": "450",
+    },
+    "Tipologias": {
+        "Studios": "250 unidades",
+        "1 dormitório": "200 unidades",
+    },
+    "Áreas comuns": [
+        "Rooftop com vista panorâmica",
+        "Piscina e deck",
+        "Academia 24h",
+        "Lavanderia coletiva",
+        "Co-working"
+    ],
+    "Diferenciais": [
+        "Fechaduras inteligentes",
+        "Wi-fi nas áreas comuns",
+        "Serviços pay-per-use"
+    ]
+};
+
+const especificacoesImovelE = {
+    "Geral": {
+        "Área do terreno": "8.500 m²",
+        "Torres": "4",
+        "Total de unidades": "220",
+    },
+    "Tipologias": {
+        "3 suítes (120 m²)": "110 unidades",
+        "4 suítes (150 m²)": "110 unidades",
+    },
+    "Áreas comuns": [
+        "Piscina biológica",
+        "Trilha para caminhada",
+        "Espaço para fogueira",
+        "Quadra de beach tennis",
+        "Salão de festas"
+    ],
+    "Diferenciais": [
+        "Integração com a natureza",
+        "Sistema de aquecimento solar",
+        "Janelas amplas com persianas automáticas"
+    ]
+};
+
+const especificacoesImovelF = {
+    "Geral": {
+        "Área do terreno": "7.000 m²",
+        "Torres": "2",
+        "Total de unidades": "350",
+    },
+    "Tipologias": {
+        "2 dormitórios": "150 unidades",
+        "3 dormitórios": "200 unidades",
+    },
+    "Áreas comuns": [
+        "Clube de frente para o mar",
+        "Piscina com borda infinita",
+        "Academia com vista para o mar",
+        "SPA e sauna",
+        "Cinema"
+    ],
+    "Diferenciais": [
+        "Vistas panorâmicas",
+        "Varanda gourmet com churrasqueira",
+        "Serviço de concierge na praia"
+    ]
+};
+
+// --- Dados dos imóveis A a F (cada um com seus dados exclusivos) ---
 const dadosImoveis = {
     'A': {
         titulo: 'Blue Marine Home Resort',
         galeria: [imovelA1, imovelA2, imovelA3],
         videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         pdfUrl: '/folhetos/folheto-a.pdf',
-        anuncio: anuncioBlueMarine,
-        especificacoes: especificacoesBlueMarine
+        anuncio: anuncioImovelA,
+        especificacoes: especificacoesImovelA
     },
     'B': {
-        titulo: 'Blue Marine Home Resort',
+        titulo: 'Villa Nova Residences',
         galeria: [imovelB1, imovelB2, imovelB3],
         videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         pdfUrl: '/folhetos/folheto-b.pdf',
-        anuncio: anuncioBlueMarine,
-        especificacoes: especificacoesBlueMarine
+        anuncio: anuncioImovelB,
+        especificacoes: especificacoesImovelB
     },
     'C': {
-        titulo: 'Blue Marine Home Resort',
+        titulo: 'Residencial Jardim das Flores',
         galeria: [imovelC1, imovelC2, imovelC3, imovelC4, imovelC5, imovelC6],
         videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         pdfUrl: '/folhetos/folheto-c.pdf',
-        anuncio: anuncioBlueMarine,
-        especificacoes: especificacoesBlueMarine
+        anuncio: anuncioImovelC,
+        especificacoes: especificacoesImovelC
     },
     'D': {
-        titulo: 'Blue Marine Home Resort',
+        titulo: 'Skyline Residences',
         galeria: [lancamento1, lancamento2, lancamento3],
         videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         pdfUrl: '/folhetos/folheto-d.pdf',
-        anuncio: anuncioBlueMarine,
-        especificacoes: especificacoesBlueMarine
+        anuncio: anuncioImovelD,
+        especificacoes: especificacoesImovelD
     },
     'E': {
-        titulo: 'Blue Marine Home Resort',
+        titulo: 'Parque das Árvores',
         galeria: [lancamento1, lancamento2, lancamento3],
         videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         pdfUrl: '/folhetos/folheto-e.pdf',
-        anuncio: anuncioBlueMarine,
-        especificacoes: especificacoesBlueMarine
+        anuncio: anuncioImovelE,
+        especificacoes: especificacoesImovelE
     },
     'F': {
-        titulo: 'Blue Marine Home Resort',
+        titulo: 'Sunset Towers',
         galeria: [lancamento1, lancamento2, lancamento3],
         videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         pdfUrl: '/folhetos/folheto-f.pdf',
-        anuncio: anuncioBlueMarine,
-        especificacoes: especificacoesBlueMarine
+        anuncio: anuncioImovelF,
+        especificacoes: especificacoesImovelF
     }
 };
 
@@ -142,8 +297,8 @@ function DetalhesImovel() {
         return <div className="container my-5 text-center">Imóvel não encontrado.</div>;
     }
 
-    const fotosVisiveis = imovel.galeria.slice(0, 2);
-    const fotosRestantes = imovel.galeria.slice(2);
+    // --- NOVO: Lógica para renderizar todas as fotos no desktop ---
+    const fotosGaleria = imovel.galeria;
 
     return (
         <>
@@ -151,21 +306,22 @@ function DetalhesImovel() {
                 <h2 className="text-center mb-4">{imovel.titulo}</h2>
                 
                 {/* Galeria */}
-                <div className="row g-0 mb-4 galeria-imovel">
-                    {fotosVisiveis.map((imagem, index) => (
-                        <div key={index} className="col-6">
+                {/* NOVO: Adicionei a classe 'galeria-desktop' para o layout em desktop */}
+                <div className="row g-0 mb-4 galeria-imovel galeria-desktop">
+                    {/* NOVO: Renderiza todas as fotos do imóvel */}
+                    {fotosGaleria.map((imagem, index) => (
+                        <div key={index} className="col-12 col-md-4 foto-galeria">
                             <img src={imagem} alt={`Galeria ${index + 1}`} className="img-fluid rounded shadow" />
                         </div>
                     ))}
-                    {fotosRestantes.length > 0 && (
-                        <div className="col-6 position-relative d-flex justify-content-center align-items-center">
-                            <img src={fotosVisiveis[1]} alt="Ver mais" className="img-fluid rounded shadow" style={{ filter: 'brightness(50%)' }} />
-                            <button className="btn btn-light position-absolute" onClick={() => setShowModal(true)}>
-                                <FaPlusCircle className="me-2" />
-                                Ver mais fotos
-                            </button>
-                        </div>
-                    )}
+                    {/* NOVO: Botão 'Ver mais fotos' */}
+                    <div className="col-12 col-md-4 position-relative d-flex justify-content-center align-items-center">
+                        <img src={fotosGaleria[fotosGaleria.length - 1]} alt="Ver mais" className="img-fluid rounded shadow" style={{ filter: 'brightness(50%)' }} />
+                        <button className="btn btn-light position-absolute" onClick={() => setShowModal(true)}>
+                            <FaPlusCircle className="me-2" />
+                            Ver mais fotos
+                        </button>
+                    </div>
                 </div>
 
                 {/* Texto publicitário */}
