@@ -9,10 +9,10 @@ function Footer({ openChat }) {
     <footer className="footer-section">
       <div className="footer-content">
         <div className="footer-icons">
-          <a href="tel:+5532991165003" aria-label="Telefone">
+          <a href="tel:+5511994649705" aria-label="Telefone">
             <FaPhone className="icon icon-flipped" />
           </a>
-          <a href="https://wa.me/5532991165003" aria-label="Whatsapp">
+          <a href="https://wa.me/5511994649705" aria-label="Whatsapp">
             <FaWhatsapp className="icon" />
           </a>
           <a href="https://www.instagram.com/talitta.salmeida" aria-label="Instagram">

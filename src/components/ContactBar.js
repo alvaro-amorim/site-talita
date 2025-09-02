@@ -8,7 +8,7 @@ function ContactBar() {
   return (
     <div className="contact-bar">
       <div className="contact-channels">
-        <a href="https://wa.me/5511995028723" className="contact-link whatsapp" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/5511994649705" className="contact-link whatsapp" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp className="icon" /> WhatsApp (11) 99502-8723
         </a>
         <a href="https://www.facebook.com/miltonmatsumura" className="contact-link facebook" target="_blank" rel="noopener noreferrer">
@@ -19,7 +19,7 @@ function ContactBar() {
         </a>
       </div>
       <div className="contact-info">
-        <p>Telefone: (11) 99502-8723</p>
+        <p>Telefone: (11) 994649705</p>
       </div>
     </div>
   );

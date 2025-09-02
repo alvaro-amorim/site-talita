@@ -66,13 +66,13 @@ function Contato() {
           <h4 className="mb-2">Outras maneiras de entrar em contato!</h4>
           <p className="small-text">(A resposta pode ser mais rápida.)</p>
           <div className="social-icons-container">
-            <a href="https://wa.me/5532991165003" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
+            <a href="https://wa.me/5511994649705" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
               <FaWhatsapp className="social-icon whatsapp" />
             </a>
             <a href="https://www.instagram.com/talitta.salmeida" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram className="social-icon instagram" />
             </a>
-            <a href="tel:+5532991165003" aria-label="Telefone">
+            <a href="tel:+5511994649705" aria-label="Telefone">
               <FaPhoneAlt className="social-icon phone" />
             </a>
           </div>
