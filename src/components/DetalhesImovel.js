@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FaPlusCircle } from 'react-icons/fa';
 import GaleriaModal from './GaleriaModal';
+import './DetalhesImovel.css';
 
 // Importe as imagens da galeria de cada imóvel
 import imovelA1 from '../assets/imovel-A-1.jpg';
@@ -106,7 +107,7 @@ function DetalhesImovel() {
             <div className="container my-5 page-content">
                 <h2 className="text-center mb-4">{imovel.titulo}</h2>
                 
-                <div className="row g-3 mb-5">
+                <div className="row mb-5 galeria-imovel galeria-desktop">
                     {fotosVisiveis.map((imagem, index) => (
                         <div key={index} className="col-md-4">
                             <img src={imagem} alt={`Galeria ${index + 1}`} className="img-fluid rounded shadow" />
