@@ -7,9 +7,9 @@ import GaleriaModal from './GaleriaModal';
 import './DetalhesImovel.css';
 
 // Importe todas as imagens necessárias.
-import imovelA1 from '../assets/imovel-A-1.jpg';
-import imovelA2 from '../assets/imovel-A-2.jpg';
-import imovelA3 from '../assets/imovel-A-3.jpg';
+import imovelA1 from '../assets/imovel-A-1.png';
+import imovelA2 from '../assets/imovel-A-2.png';
+import imovelA3 from '../assets/imovel-A-3.png';
 import imovelB1 from '../assets/imovel-B-1.jpg';
 import imovelB2 from '../assets/imovel-B-2.jpg';
 import imovelB3 from '../assets/imovel-B-3.jpg';
@@ -241,8 +241,8 @@ const dadosImoveis = {
     'A': {
         titulo: 'Blue Marine Home Resort',
         galeria: [imovelA1, imovelA2, imovelA3],
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        pdfUrl: '/folhetos/folheto-a.pdf',
+        videoUrl: 'https://youtube.com/embed/2aB4xwQaOx0',
+        pdfUrl: '/folhetos/FOLHETO.BM.pdf',
         anuncio: anuncioImovelA,
         especificacoes: especificacoesImovelA
     },

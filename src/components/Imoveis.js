@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import CardImovel from './CardImovel';
 
 // Importe as imagens dos imóveis aqui
-import imovel1 from '../assets/imovel1.jpg';
-import imovel2 from '../assets/imovel2.jpg';
-import imovel3 from '../assets/imovel3.jpg';
+import imovel1 from '../assets/imovel-A-1.png';
+import imovel2 from '../assets/imovel-A-2.png';
+import imovel3 from '../assets/imovel-A-3.png';
 
 // Importe as imagens da galeria de cada imóvel
-import imovelA1 from '../assets/imovel-A-1.jpg';
-import imovelA2 from '../assets/imovel-A-2.jpg';
-import imovelA3 from '../assets/imovel-A-3.jpg';
+import imovelA1 from '../assets/imovel-A-1.png';
+import imovelA2 from '../assets/imovel-A-2.png';
+import imovelA3 from '../assets/imovel-A-3.png';
 import imovelB1 from '../assets/imovel-B-1.jpg';
 import imovelB2 from '../assets/imovel-B-2.jpg';
 import imovelB3 from '../assets/imovel-B-3.jpg';
@@ -25,7 +25,7 @@ function Imoveis() {
     { 
       id: 'A',
       imagem: imovel1, 
-      titulo: 'Apartamento de Luxo', 
+      titulo: 'blue Marine | Home Resort', 
       preco: 'R$ 1.500.000',
       galeria: [imovelA1, imovelA2, imovelA3]
     },
