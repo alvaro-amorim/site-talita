@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { FaPlusCircle } from 'react-icons/fa';
+import { FaPlusCircle, FaDownload } from 'react-icons/fa'; // Importa o ícone de download
 import GaleriaModal from './GaleriaModal';
 import './DetalhesImovel.css';
 
@@ -29,6 +29,8 @@ const dadosImoveis = {
     'A': {
         titulo: 'Apartamento de Luxo',
         galeria: [imovelA1, imovelA2, imovelA3],
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        pdfUrl: '/folhetos/folheto-a.pdf',
         especificacoes: {
             'Área': '120m²',
             'Quartos': '3',
@@ -40,6 +42,8 @@ const dadosImoveis = {
     'B': {
         titulo: 'Casa com Jardim',
         galeria: [imovelB1, imovelB2, imovelB3],
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        pdfUrl: '/folhetos/folheto-b.pdf',
         especificacoes: {
             'Área': '150m²',
             'Quartos': '4',
@@ -51,6 +55,8 @@ const dadosImoveis = {
     'C': {
         titulo: 'Loft Moderno',
         galeria: [imovelC1, imovelC2, imovelC3, imovelC4, imovelC5, imovelC6],
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        pdfUrl: '/folhetos/folheto-c.pdf',
         especificacoes: {
             'Área': '85m²',
             'Quartos': '1',
@@ -62,6 +68,8 @@ const dadosImoveis = {
     'D': {
         titulo: 'Residencial Vida Nova',
         galeria: [lancamento1, lancamento2, lancamento3],
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        pdfUrl: '/folhetos/folheto-d.pdf',
         especificacoes: {
             'Estágio da obra': 'Em lançamento',
             'Quartos': '2-3',
@@ -72,6 +80,8 @@ const dadosImoveis = {
     'E': {
         titulo: 'Condomínio Flórida',
         galeria: [lancamento1, lancamento2, lancamento3],
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        pdfUrl: '/folhetos/folheto-e.pdf',
         especificacoes: {
             'Estágio da obra': 'Em construção',
             'Quartos': '3-4',
@@ -82,6 +92,8 @@ const dadosImoveis = {
     'F': {
         titulo: 'Oceano Residences',
         galeria: [lancamento1, lancamento2, lancamento3],
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        pdfUrl: '/folhetos/folheto-f.pdf',
         especificacoes: {
             'Estágio da obra': 'Breve lançamento',
             'Tipo': 'Apartamento',
@@ -107,14 +119,14 @@ function DetalhesImovel() {
             <div className="container my-5 page-content">
                 <h2 className="text-center mb-4">{imovel.titulo}</h2>
                 
-                <div className="row mb-5 galeria-imovel galeria-desktop">
+                <div className="row g-0 mb-5 galeria-imovel">
                     {fotosVisiveis.map((imagem, index) => (
-                        <div key={index} className="col-md-4">
+                        <div key={index} className="col-6">
                             <img src={imagem} alt={`Galeria ${index + 1}`} className="img-fluid rounded shadow" />
                         </div>
                     ))}
                     {fotosRestantes.length > 0 && (
-                        <div className="col-md-4 position-relative d-flex justify-content-center align-items-center">
+                        <div className="col-6 position-relative d-flex justify-content-center align-items-center">
                             <img src={fotosVisiveis[1]} alt="Ver mais" className="img-fluid rounded shadow" style={{ filter: 'brightness(50%)' }} />
                             <button className="btn btn-light position-absolute" onClick={() => setShowModal(true)}>
                                 <FaPlusCircle className="me-2" />
@@ -132,6 +144,32 @@ function DetalhesImovel() {
                                 <li key={chave} className="list-group-item">{chave}: {valor}</li>
                             ))}
                         </ul>
+                    </div>
+                </div>
+
+                <div className="row mt-5">
+                    <div className="col-12">
+                        <h3>Vídeo do Empreendimento</h3>
+                        <div className="video-container">
+                            <iframe
+                                src={imovel.videoUrl}
+                                title="Vídeo do Empreendimento"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row mt-5">
+                    <div className="col-12">
+                        <h3>Folheto do Empreendimento</h3>
+                        <div className="col-md-6 mx-auto">
+                            <a href={imovel.pdfUrl} download className="folheto-card">
+                                <FaDownload className="folheto-icon" />
+                                <span className="folheto-text">Baixar Folheto</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
