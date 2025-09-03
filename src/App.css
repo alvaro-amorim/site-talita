@@ -28,7 +28,7 @@ html, body, #root, .App {
 .boneca-ground {
   display: block;
   margin-left: auto;
-  margin-right: 0px;  /* encosta perto do chat */
+  margin-right: -40px;  /* encosta perto do chat */
   width: 240px;
   height: auto;
   transform: translateY(-221px); /* sobe um pouco para parecer colada */
