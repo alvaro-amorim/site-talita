@@ -42,8 +42,3 @@ html, body, #root, .App {
   transform: translateY(-138.5px); /* sobe um pouco para parecer colada */
   }
 }
-@media (max-width: 768px) {
-  .boneca-wrapper {
-  margin-top: 80px;
-  }  
-}
