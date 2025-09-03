@@ -331,7 +331,7 @@ const dadosImoveis = {
     galeria: [imagemGenerica, imagemGenerica, imagemGenerica],
     videoUrl: 'https://www.youtube.com/embed/yyyyy',
     pdfUrl: '/folhetos/folheto-e.pdf',
-    anuncio: "Em breve novo lançamentos!",
+    anuncio: "Em breve novo lançamento!",
     especificacoes: { "Exemplo": "Em breve novo lançamento!" }
   },
   'F': {
