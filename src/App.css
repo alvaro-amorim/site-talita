@@ -19,3 +19,31 @@ html, body, #root, .App {
   flex-direction: column;
   min-height: 100vh;
 }
+
+.boneca-wrapper {
+  position: relative;
+  height: 0;
+}
+
+.boneca-ground {
+  display: block;
+  margin-left: auto;
+  margin-right: 0px;  /* encosta perto do chat */
+  width: 240px;
+  height: auto;
+  transform: translateY(-221px); /* sobe um pouco para parecer colada */
+}
+
+@media (max-width: 768px) {
+  .boneca-ground {
+  width: 150px;
+  margin-right: -20px;
+  height: auto;
+  transform: translateY(-138.5px); /* sobe um pouco para parecer colada */
+  }
+}
+@media (max-width: 768px) {
+  .boneca-wrapper {
+  margin-top: 50px;
+  }  
+}

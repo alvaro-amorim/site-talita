@@ -11,6 +11,8 @@ import SobreMim from './components/SobreMim';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
 import ChatModal from './components/ChatModal';
+import bonecaClick from './assets/boneca-click.png'; // importa a boneca
+import './App.css';
 
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -35,6 +37,15 @@ function App() {
           <Route path="/sobre" element={<SobreMim />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
+
+        <div className="boneca-wrapper">
+  <img
+    src={bonecaClick}
+    alt="Boneca apontando para o chat"
+    className="boneca-ground"
+  />
+</div>
+
         <Footer openChat={openChatModal} />
         <ChatModal show={isChatOpen} onClose={closeChatModal} />
       </div>
