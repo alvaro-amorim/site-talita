@@ -50,7 +50,7 @@ import lancamento3 from '../assets/lancamento3.jpg';
    TEXTOS PUBLICITÁRIOS
 -------------------------------- */
 const anuncioImovelA = `
-✨ Blue Marine Home Resort ✨
+✨ Blue Marine | Home Resort ✨
 Viva como se estivesse de férias todos os dias, a apenas 4 minutos do metrô São Judas e 6 minutos de Congonhas.
 Studios a 3 dormitórios em um condomínio completo, com piscina de 25m, coworking, coliving, áreas gourmet, academia e lazer de resort.
 
@@ -70,7 +70,7 @@ Apartamentos de 215 a 571 m², com 3 e 4 suítes e serviços exclusivos.
 `;
 
 const anuncioImovelC = `
-✨ Arkadio – World-Class Residence ✨
+✨ Arkadio | World-Class Residence ✨
 Um ícone internacional no Brooklin, assinado por Carlos Ott, com paisagismo de Benedito Abbud e interiores de Priscilla Zarzur.
 Apartamentos de 107 a 180 m², até 4 suítes e lazer de resort a 112 m de altura.
 
@@ -236,9 +236,9 @@ const especificacoesImovelC = {
 -------------------------------- */
 const dadosImoveis = {
   'A': {
-    titulo: 'Blue Marine Home Resort',
+    titulo: 'Blue Marine | Home Resort',
     galeria: [imovelA1, imovelA2, imovelA3, imovelA4, imovelA5, imovelA6, imovelA7, imovelA8, imovelA9, imovelA10, imovelA11, imovelA12, imovelA13, imovelA14, imovelA15,imovelA16, imovelA17, imovelA18, imovelA19, imovelA20, imovelA21, imovelA22, imovelA23],
-    videoUrl: 'https://youtube.com/embed/2aB4xwQaOx0',
+    videoUrl: 'https://youtube.com/embed/R6ygYBwbnC4',
     pdfUrl: '/folhetos/FOLHETO.BM.pdf',
     anuncio: anuncioImovelA,
     especificacoes: especificacoesImovelA
@@ -246,7 +246,7 @@ const dadosImoveis = {
   'B': {
     titulo: 'Agami Park Residences',
     galeria: [imovelB1, imovelB2, imovelB3],
-    videoUrl: 'https://youtube.com/embed/xxxxxxx', // substitua pelo correto
+    videoUrl: 'https://youtube.com/embed/Z-4NPAqXfGI', // substitua pelo correto
     pdfUrl: '/folhetos/FOLHETO.AG.pdf',
     anuncio: anuncioImovelB,
     especificacoes: especificacoesImovelB
@@ -254,7 +254,7 @@ const dadosImoveis = {
   'C': {
     titulo: 'Arkadio – World-Class Residence',
     galeria: [imovelC1, imovelC2, imovelC3, imovelC4, imovelC5, imovelC6],
-    videoUrl: 'https://youtube.com/embed/yyyyyyy', // substitua pelo correto
+    videoUrl: 'https://youtube.com/embed/thG4po12aIA', // substitua pelo correto
     pdfUrl: '/folhetos/FOLHETO.AR.pdf',
     anuncio: anuncioImovelC,
     especificacoes: especificacoesImovelC

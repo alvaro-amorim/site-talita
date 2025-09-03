@@ -27,21 +27,18 @@ function Imoveis() {
       imagem: imovel1, 
       titulo: 'Blue Marine | Home Resort', 
       preco: 'A partir de R$ 990.000',
-      galeria: [imovelA1, imovelA2, imovelA3]
     },
     { 
       id: 'B',
       imagem: imovel2, 
-      titulo: 'Agami', 
+      titulo: 'Agami Park Residences', 
       preco: 'A partir de R$ 990.000',
-      galeria: [imovelB1, imovelB2, imovelB3]
     },
     { 
       id: 'C',
       imagem: imovel3, 
-      titulo: 'Arkadio', 
+      titulo: 'Arkadio | World-Class Residence', 
       preco: 'A partir de R$ 990.000',
-      galeria: [imovelC1, imovelC2, imovelC3]
     },
   ];
 
