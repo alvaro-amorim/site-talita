@@ -28,7 +28,7 @@ function Contato() {
 
   return (
     <div className="container mt-4 page-content">
-      <h2 className="mb-4 text-left">Fale Conosco</h2>
+      <h2 className="mb-4 text-left">Fale Comigo!</h2>
       
       <div className="contact-layout-container">
 
