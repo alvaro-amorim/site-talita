@@ -322,7 +322,7 @@ const dadosImoveis = {
     titulo: 'MAC | Vila Clementino',
     galeria: [lancamentoA1, lancamentoA2, lancamentoA3],
     videoUrl: 'https://www.youtube.com/embed/dJrAx2NdrrE',
-    pdfUrl: '/folhetos/folheto-d.pdf',
+    pdfUrl: '/folhetos/FOLHETO.MAC.pdf',
     anuncio: "MAC | Vila Clementino",
     especificacoes: { "Exemplo": "Dados MAC | Vila Clementino" }
   },
