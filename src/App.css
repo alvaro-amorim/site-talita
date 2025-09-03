@@ -44,6 +44,6 @@ html, body, #root, .App {
 }
 @media (max-width: 768px) {
   .boneca-wrapper {
-  margin-top: 50px;
+  margin-top: 80px;
   }  
 }
