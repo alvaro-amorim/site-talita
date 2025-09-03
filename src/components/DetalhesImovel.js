@@ -32,8 +32,33 @@ import imovelA22 from '../assets/BlueMarine/imovel-A-22.png';
 import imovelA23 from '../assets/BlueMarine/imovel-A-23.png';
 
 import imovelB1 from '../assets/Agami/imovel-B-1.png';
-import imovelB2 from '../assets/imovel-B-2.jpg';
-import imovelB3 from '../assets/imovel-B-3.jpg';
+import imovelB2 from '../assets/Agami/imovel-B-2.png';
+import imovelB3 from '../assets/Agami/imovel-B-3.png';
+import imovelB4 from '../assets/Agami/imovel-B-4.png';
+import imovelB5 from '../assets/Agami/imovel-B-5.png';
+import imovelB6 from '../assets/Agami/imovel-B-6.png';
+import imovelB7 from '../assets/Agami/imovel-B-7.png';
+import imovelB8 from '../assets/Agami/imovel-B-8.png';
+import imovelB9 from '../assets/Agami/imovel-B-9.png';
+import imovelB10 from '../assets/Agami/imovel-B-10.png';
+import imovelB11 from '../assets/Agami/imovel-B-11.png';
+import imovelB12 from '../assets/Agami/imovel-B-12.png';
+import imovelB13 from '../assets/Agami/imovel-B-13.png';
+import imovelB14 from '../assets/Agami/imovel-B-14.png';
+import imovelB15 from '../assets/Agami/imovel-B-15.png';
+import imovelB16 from '../assets/Agami/imovel-B-16.png';
+import imovelB17 from '../assets/Agami/imovel-B-17.png';
+import imovelB18 from '../assets/Agami/imovel-B-18.png';
+import imovelB19 from '../assets/Agami/imovel-B-19.png';
+import imovelB20 from '../assets/Agami/imovel-B-20.png';
+import imovelB21 from '../assets/Agami/imovel-B-21.png';
+import imovelB22 from '../assets/Agami/imovel-B-22.png';
+import imovelB23 from '../assets/Agami/imovel-B-23.png';
+import imovelB24 from '../assets/Agami/imovel-B-24.png';
+import imovelB25 from '../assets/Agami/imovel-B-25.png';
+import imovelB26 from '../assets/Agami/imovel-B-26.png';
+import imovelB27 from '../assets/Agami/imovel-B-27.png';
+
 
 import imovelC1 from '../assets/Arcadio/imovel-C-1.png';
 import imovelC2 from '../assets/imovel-C-2.jpg';
@@ -245,7 +270,12 @@ const dadosImoveis = {
   },
   'B': {
     titulo: 'Agami Park Residences',
-    galeria: [imovelB1, imovelB2, imovelB3],
+    galeria: [
+  imovelB1, imovelB2, imovelB3, imovelB4, imovelB5, imovelB6, imovelB7, imovelB8, imovelB9,
+  imovelB10, imovelB11, imovelB12, imovelB13, imovelB14, imovelB15, imovelB16, imovelB17, imovelB18, imovelB19,
+  imovelB20, imovelB21, imovelB22, imovelB23, imovelB24, imovelB25, imovelB26, imovelB27
+],
+
     videoUrl: 'https://youtube.com/embed/Z-4NPAqXfGI', // substitua pelo correto
     pdfUrl: '/folhetos/FOLHETO.AG.pdf',
     anuncio: anuncioImovelB,
