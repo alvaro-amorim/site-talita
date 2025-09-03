@@ -21,7 +21,7 @@ function Imoveis() {
     { 
       id: 'B',
       imagem: imovel2, 
-      titulo: 'Agami Park Residences', 
+      titulo: 'Agami | Park Residences', 
       preco: 'A partir de R$ 5.500.000',
     },
     { 

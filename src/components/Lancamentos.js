@@ -4,28 +4,27 @@ import { Link } from 'react-router-dom'; // 1. Importe o componente Link
 
 import imagemGenerica from '../assets/imagemGenerica.jpg';
 
+import lancamentoA1 from '../assets/MacClementino/lancamento-A-1.png';
+
 function Lancamentos() {
   const listaDeEmpreendimentos = [
     { 
       id: 'D', 
-      imagem: imagemGenerica, 
+      imagem: lancamentoA1, 
       titulo: 'MAC | Vila Clementino', 
       preco: 'A partir de R$ (em breve)',
-      galeria: [imagemGenerica, imagemGenerica, imagemGenerica]
     },
     { 
       id: 'E', 
       imagem: imagemGenerica, 
       titulo: 'Em breve novo lançamento!', 
       preco: 'A partir de R$ ----',
-      galeria: [imagemGenerica, imagemGenerica, imagemGenerica]
     },
     { 
       id: 'F', 
       imagem: imagemGenerica, 
       titulo: 'Em breve novo lançamento!', 
       preco: 'A partir de R$ ----',
-      galeria: [imagemGenerica, imagemGenerica, imagemGenerica]
     },
   ];
 

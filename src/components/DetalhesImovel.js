@@ -98,6 +98,13 @@ import imovelC35 from '../assets/Arcadio/imovel-C-35.png';
 import imovelC36 from '../assets/Arcadio/imovel-C-36.png';
 
 import imagemGenerica from '../assets/imagemGenerica.jpg';
+
+import lancamentoA1 from '../assets/MacClementino/lancamento-A-1.png';
+import lancamentoA2 from '../assets/MacClementino/lancamento-A-2.png';
+import lancamentoA3 from '../assets/MacClementino/lancamento-A-3.png';
+
+
+
 /* -------------------------------
    TEXTOS PUBLICITÁRIOS
 -------------------------------- */
@@ -113,7 +120,7 @@ Blue Marine – entregue-se ao azul.
 `;
 
 const anuncioImovelB = `
-✨ Agami Park Residences ✨
+✨ Agami | Park Residences ✨
 O privilégio de viver ao lado do Parque Ibirapuera, em um projeto com arquitetura internacional da Perkins&Will,
 paisagismo de Benedito Abbud e interiores de Carlos Rossi.
 Apartamentos de 215 a 571 m², com 3 e 4 suítes e serviços exclusivos.
@@ -296,7 +303,7 @@ const dadosImoveis = {
     especificacoes: especificacoesImovelA
   },
   'B': {
-    titulo: 'Agami Park Residences',
+    titulo: 'Agami | Park Residences',
     galeria: [imovelB1, imovelB2, imovelB3, imovelB4, imovelB5, imovelB6, imovelB7, imovelB8, imovelB9, imovelB10, imovelB11, imovelB12, imovelB13, imovelB14, imovelB15, imovelB16, imovelB17, imovelB18, imovelB19, imovelB20, imovelB21, imovelB22, imovelB23, imovelB24, imovelB25, imovelB26, imovelB27],
     videoUrl: 'https://youtube.com/embed/Z-4NPAqXfGI', 
     pdfUrl: '/folhetos/FOLHETO.AG.pdf',
@@ -304,7 +311,7 @@ const dadosImoveis = {
     especificacoes: especificacoesImovelB
   },
   'C': {
-    titulo: 'Arkadio – World-Class Residence',
+    titulo: 'Arkadio | World-Class Residence',
     galeria: [imovelC1, imovelC2, imovelC3, imovelC4, imovelC5, imovelC6, imovelC7, imovelC8, imovelC9, imovelC10, imovelC11, imovelC12, imovelC13, imovelC14, imovelC15, imovelC16, imovelC17, imovelC18, imovelC19, imovelC20, imovelC21, imovelC22, imovelC23, imovelC24, imovelC25, imovelC26, imovelC27, imovelC28, imovelC29, imovelC30, imovelC31, imovelC32, imovelC33, imovelC34, imovelC35, imovelC36],
     videoUrl: 'https://youtube.com/embed/thG4po12aIA', 
     pdfUrl: '/folhetos/FOLHETO.AR.pdf',
@@ -313,8 +320,8 @@ const dadosImoveis = {
   },
   'D': {
     titulo: 'MAC | Vila Clementino',
-    galeria: [imagemGenerica, imagemGenerica, imagemGenerica],
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    galeria: [lancamentoA1, lancamentoA2, lancamentoA3],
+    videoUrl: 'https://www.youtube.com/embed/dJrAx2NdrrE',
     pdfUrl: '/folhetos/folheto-d.pdf',
     anuncio: "MAC | Vila Clementino",
     especificacoes: { "Exemplo": "Dados MAC | Vila Clementino" }
