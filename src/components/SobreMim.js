@@ -28,13 +28,13 @@ function SobreMim() {
         </div>
         <div className="text-sb col-md-7">
           <p className="lead">
-            Sou Corretora de Imóveis, e minha missão é ajudar você e sua família a encontrar o lar dos seus sonhos. Atuo diretamente com as mais conceituadas Construtoras da cidade de São Paulo, oferecendo as melhores ofertas de custo-benefício, seja para moradia ou investimento.
+            Sou Corretora de Imóveis e Advogada, minha missão é ajudar você e sua família a encontrar o lar dos seus sonhos! Atuo diretamente com as mais conceituadas Construtoras da cidade de São Paulo, oferecendo as melhores ofertas de custo-benefício, seja para moradia ou investimento.
           </p>
           <p>
             Com anos de experiência no mercado imobiliário, tenho o conhecimento e a paixão para guiar você em cada etapa do processo, garantindo uma experiência tranquila e segura. Acredito que um lar é mais do que tijolos e cimento; é o lugar onde memórias são construídas e a vida acontece.
           </p>
           <p>
-            Minha missão é transformar o seu sonho em realidade. Estou à disposição para te auxiliar a encontrar o imóvel perfeito.
+            Minha missão é transformar o seu sonho em realidade! Estou à disposição para te auxiliar a encontrar o imóvel perfeito!
           </p>
         </div>
       </div>
