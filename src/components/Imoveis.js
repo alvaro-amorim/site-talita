@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 import CardImovel from './CardImovel';
 
 // Importe as imagens dos imóveis aqui
-import imovel1 from '../assets/imovel-A-1.png';
-import imovel2 from '../assets/imovel-A-2.png';
-import imovel3 from '../assets/imovel-A-3.png';
+import imovel1 from '../assets/BlueMarine/imovel-A-1.png';
+import imovel2 from '../assets/Agami/imovel-B-1.png';
+import imovel3 from '../assets/Arcadio/imovel-C-1.png';
 
 // Importe as imagens da galeria de cada imóvel
-import imovelA1 from '../assets/imovel-A-1.png';
-import imovelA2 from '../assets/imovel-A-2.png';
-import imovelA3 from '../assets/imovel-A-3.png';
-import imovelB1 from '../assets/imovel-B-1.jpg';
+import imovelA1 from '../assets/BlueMarine/imovel-A-1.png';
+import imovelA2 from '../assets/BlueMarine/imovel-A-2.png';
+import imovelA3 from '../assets/BlueMarine/imovel-A-3.png';
+import imovelB1 from '../assets/Agami/imovel-B-1.png';
 import imovelB2 from '../assets/imovel-B-2.jpg';
 import imovelB3 from '../assets/imovel-B-3.jpg';
-import imovelC1 from '../assets/imovel-C-1.jpg';
+import imovelC1 from '../assets/Arcadio/imovel-C-1.png';
 import imovelC2 from '../assets/imovel-C-2.jpg';
 import imovelC3 from '../assets/imovel-C-3.jpg';
 
@@ -25,22 +25,22 @@ function Imoveis() {
     { 
       id: 'A',
       imagem: imovel1, 
-      titulo: 'blue Marine | Home Resort', 
-      preco: 'R$ 1.500.000',
+      titulo: 'Blue Marine | Home Resort', 
+      preco: 'A partir de R$ 990.000',
       galeria: [imovelA1, imovelA2, imovelA3]
     },
     { 
       id: 'B',
       imagem: imovel2, 
-      titulo: 'Casa com Jardim', 
-      preco: 'R$ 850.000',
+      titulo: 'Agami', 
+      preco: 'A partir de R$ 990.000',
       galeria: [imovelB1, imovelB2, imovelB3]
     },
     { 
       id: 'C',
       imagem: imovel3, 
-      titulo: 'Loft Moderno', 
-      preco: 'R$ 520.000',
+      titulo: 'Arkadio', 
+      preco: 'A partir de R$ 990.000',
       galeria: [imovelC1, imovelC2, imovelC3]
     },
   ];

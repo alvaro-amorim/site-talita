@@ -7,13 +7,35 @@ import GaleriaModal from './GaleriaModal';
 import './DetalhesImovel.css';
 
 // Imagens exemplo (substitua depois pelas corretas de cada empreendimento)
-import imovelA1 from '../assets/imovel-A-1.png';
-import imovelA2 from '../assets/imovel-A-2.png';
-import imovelA3 from '../assets/imovel-A-3.png';
-import imovelB1 from '../assets/imovel-B-1.jpg';
+import imovelA1 from '../assets/BlueMarine/imovel-A-1.png';
+import imovelA2 from '../assets/BlueMarine/imovel-A-2.png';
+import imovelA3 from '../assets/BlueMarine/imovel-A-3.png';
+import imovelA4 from '../assets/BlueMarine/imovel-A-4.png';
+import imovelA5 from '../assets/BlueMarine/imovel-A-5.png';
+import imovelA6 from '../assets/BlueMarine/imovel-A-6.png';
+import imovelA7 from '../assets/BlueMarine/imovel-A-7.png';
+import imovelA8 from '../assets/BlueMarine/imovel-A-8.png';
+import imovelA9 from '../assets/BlueMarine/imovel-A-9.png';
+import imovelA10 from '../assets/BlueMarine/imovel-A-10.png';
+import imovelA11 from '../assets/BlueMarine/imovel-A-11.png';
+import imovelA12 from '../assets/BlueMarine/imovel-A-12.png';
+import imovelA13 from '../assets/BlueMarine/imovel-A-13.png';
+import imovelA14 from '../assets/BlueMarine/imovel-A-14.png';
+import imovelA15 from '../assets/BlueMarine/imovel-A-15.png';
+import imovelA16 from '../assets/BlueMarine/imovel-A-16.png';
+import imovelA17 from '../assets/BlueMarine/imovel-A-17.png';
+import imovelA18 from '../assets/BlueMarine/imovel-A-18.png';
+import imovelA19 from '../assets/BlueMarine/imovel-A-19.png';
+import imovelA20 from '../assets/BlueMarine/imovel-A-20.png';
+import imovelA21 from '../assets/BlueMarine/imovel-A-21.png';
+import imovelA22 from '../assets/BlueMarine/imovel-A-22.png';
+import imovelA23 from '../assets/BlueMarine/imovel-A-23.png';
+
+import imovelB1 from '../assets/Agami/imovel-B-1.png';
 import imovelB2 from '../assets/imovel-B-2.jpg';
 import imovelB3 from '../assets/imovel-B-3.jpg';
-import imovelC1 from '../assets/imovel-C-1.jpg';
+
+import imovelC1 from '../assets/Arcadio/imovel-C-1.png';
 import imovelC2 from '../assets/imovel-C-2.jpg';
 import imovelC3 from '../assets/imovel-C-3.jpg';
 import imovelC4 from '../assets/imovel-C-4.jpg';
@@ -215,7 +237,7 @@ const especificacoesImovelC = {
 const dadosImoveis = {
   'A': {
     titulo: 'Blue Marine Home Resort',
-    galeria: [imovelA1, imovelA2, imovelA3],
+    galeria: [imovelA1, imovelA2, imovelA3, imovelA4, imovelA5, imovelA6, imovelA7, imovelA8, imovelA9, imovelA10, imovelA11, imovelA12, imovelA13, imovelA14, imovelA15,imovelA16, imovelA17, imovelA18, imovelA19, imovelA20, imovelA21, imovelA22, imovelA23],
     videoUrl: 'https://youtube.com/embed/2aB4xwQaOx0',
     pdfUrl: '/folhetos/FOLHETO.BM.pdf',
     anuncio: anuncioImovelA,
@@ -281,18 +303,25 @@ function DetalhesImovel() {
         
         {/* Galeria */}
         <div className="row g-0 mb-4 galeria-imovel galeria-desktop">
-          {fotosGaleria.map((imagem, index) => (
-            <div key={index} className="col-12 col-md-4 foto-galeria">
-              <img src={imagem} alt={`Galeria ${index + 1}`} className="img-fluid rounded shadow" />
-            </div>
-          ))}
-          <div className="col-12 col-md-4 position-relative d-flex justify-content-center align-items-center">
-            <img src={fotosGaleria[fotosGaleria.length - 1]} alt="Ver mais" className="img-fluid rounded shadow" style={{ filter: 'brightness(50%)' }} />
-            <button className="btn btn-light position-absolute" onClick={() => setShowModal(true)}>
-              <FaPlusCircle className="me-2" />
-              Ver mais fotos
-            </button>
-          </div>
+          {fotosGaleria.slice(0, 2).map((imagem, index) => (
+  <div key={index} className="col-12 col-md-4 foto-galeria">
+    <img src={imagem} alt={`Galeria ${index + 1}`} className="img-fluid rounded shadow" />
+  </div>
+))}
+
+{/* Card "Ver mais fotos" */}
+<div className="col-12 col-md-4 position-relative d-flex justify-content-center align-items-center">
+  <img
+    src={fotosGaleria[2] || fotosGaleria[fotosGaleria.length - 1]}  
+    alt="Ver mais"
+    className="img-fluid rounded shadow"
+    style={{ filter: 'brightness(50%)' }}
+  />
+  <button className="btn btn-light position-absolute" onClick={() => setShowModal(true)}>
+    <FaPlusCircle className="me-2" />
+    Ver mais fotos
+  </button>
+</div>
         </div>
 
         {/* Texto publicitário */}
