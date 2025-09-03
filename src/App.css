@@ -22,7 +22,7 @@ html, body, #root, .App {
 
 .boneca-wrapper {
   position: relative;
-  height: 20px;
+  height: 0px;
 }
 
 .boneca-ground {
