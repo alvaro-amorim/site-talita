@@ -37,7 +37,7 @@ function SobreMim() {
             Minha missão é transformar o seu sonho em realidade! Estou à disposição para te auxiliar a encontrar o imóvel perfeito!
           </p>
           <p>
-            Talitta Almeida -|||||||||- CRECI/SP 251039F <br></br> Corretora Imobiliária
+            Talitta Almeida 🏘️🤝✔️ CRECI/SP 251039F <br></br> (Corretora Imobiliária)
           </p>
         </div>
       </div>

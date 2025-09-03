@@ -2,32 +2,30 @@ import React from 'react';
 import CardImovel from './CardImovel';
 import { Link } from 'react-router-dom'; // 1. Importe o componente Link
 
-import lancamento1 from '../assets/lancamento1.jpg';
-import lancamento2 from '../assets/lancamento2.jpg';
-import lancamento3 from '../assets/lancamento3.jpg';
+import imagemGenerica from '../assets/imagemGenerica.jpg';
 
 function Lancamentos() {
   const listaDeEmpreendimentos = [
     { 
       id: 'D', 
-      imagem: lancamento1, 
-      titulo: 'Residencial Vida Nova', 
-      preco: 'A partir de R$ 350.000',
-      galeria: [lancamento1, lancamento2, lancamento3]
+      imagem: imagemGenerica, 
+      titulo: 'MAC | Vila Clementino', 
+      preco: 'A partir de R$ (em breve)',
+      galeria: [imagemGenerica, imagemGenerica, imagemGenerica]
     },
     { 
       id: 'E', 
-      imagem: lancamento2, 
-      titulo: 'Condomínio Flórida', 
-      preco: 'A partir de R$ 900.000',
-      galeria: [lancamento1, lancamento2, lancamento3]
+      imagem: imagemGenerica, 
+      titulo: 'Em breve novo lançamento!', 
+      preco: 'A partir de R$ ----',
+      galeria: [imagemGenerica, imagemGenerica, imagemGenerica]
     },
     { 
       id: 'F', 
-      imagem: lancamento3, 
-      titulo: 'Oceano Residences', 
-      preco: 'A partir de R$ 600.000',
-      galeria: [lancamento1, lancamento2, lancamento3]
+      imagem: imagemGenerica, 
+      titulo: 'Em breve novo lançamento!', 
+      preco: 'A partir de R$ ----',
+      galeria: [imagemGenerica, imagemGenerica, imagemGenerica]
     },
   ];
 

@@ -61,16 +61,43 @@ import imovelB27 from '../assets/Agami/imovel-B-27.png';
 
 
 import imovelC1 from '../assets/Arcadio/imovel-C-1.png';
-import imovelC2 from '../assets/imovel-C-2.jpg';
-import imovelC3 from '../assets/imovel-C-3.jpg';
-import imovelC4 from '../assets/imovel-C-4.jpg';
-import imovelC5 from '../assets/imovel-C-5.jpg';
-import imovelC6 from '../assets/imovel-C-6.jpg';
+import imovelC2 from '../assets/Arcadio/imovel-C-2.png';
+import imovelC3 from '../assets/Arcadio/imovel-C-3.png';
+import imovelC4 from '../assets/Arcadio/imovel-C-4.png';
+import imovelC5 from '../assets/Arcadio/imovel-C-5.png';
+import imovelC6 from '../assets/Arcadio/imovel-C-6.png';
+import imovelC7 from '../assets/Arcadio/imovel-C-7.png';
+import imovelC8 from '../assets/Arcadio/imovel-C-8.png';
+import imovelC9 from '../assets/Arcadio/imovel-C-9.png';
+import imovelC10 from '../assets/Arcadio/imovel-C-10.png';
+import imovelC11 from '../assets/Arcadio/imovel-C-11.png';
+import imovelC12 from '../assets/Arcadio/imovel-C-12.png';
+import imovelC13 from '../assets/Arcadio/imovel-C-13.png';
+import imovelC14 from '../assets/Arcadio/imovel-C-14.png';
+import imovelC15 from '../assets/Arcadio/imovel-C-15.png';
+import imovelC16 from '../assets/Arcadio/imovel-C-16.png';
+import imovelC17 from '../assets/Arcadio/imovel-C-17.png';
+import imovelC18 from '../assets/Arcadio/imovel-C-18.png';
+import imovelC19 from '../assets/Arcadio/imovel-C-19.png';
+import imovelC20 from '../assets/Arcadio/imovel-C-20.png';
+import imovelC21 from '../assets/Arcadio/imovel-C-21.png';
+import imovelC22 from '../assets/Arcadio/imovel-C-22.png';
+import imovelC23 from '../assets/Arcadio/imovel-C-23.png';
+import imovelC24 from '../assets/Arcadio/imovel-C-24.png';
+import imovelC25 from '../assets/Arcadio/imovel-C-25.png';
+import imovelC26 from '../assets/Arcadio/imovel-C-26.png';
+import imovelC27 from '../assets/Arcadio/imovel-C-27.png';
+import imovelC28 from '../assets/Arcadio/imovel-C-28.png';
+import imovelC29 from '../assets/Arcadio/imovel-C-29.png';
+import imovelC30 from '../assets/Arcadio/imovel-C-30.png';
+import imovelC31 from '../assets/Arcadio/imovel-C-31.png';
+import imovelC32 from '../assets/Arcadio/imovel-C-32.png';
+import imovelC33 from '../assets/Arcadio/imovel-C-33.png';
+import imovelC34 from '../assets/Arcadio/imovel-C-34.png';
+import imovelC35 from '../assets/Arcadio/imovel-C-35.png';
+import imovelC36 from '../assets/Arcadio/imovel-C-36.png';
 
-import lancamento1 from '../assets/lancamento1.jpg';
-import lancamento2 from '../assets/lancamento2.jpg';
-import lancamento3 from '../assets/lancamento3.jpg';
-
+import imagemGenerica from '../assets/imagemGenerica.jpg';
 /* -------------------------------
    TEXTOS PUBLICITÁRIOS
 -------------------------------- */
@@ -270,48 +297,43 @@ const dadosImoveis = {
   },
   'B': {
     titulo: 'Agami Park Residences',
-    galeria: [
-  imovelB1, imovelB2, imovelB3, imovelB4, imovelB5, imovelB6, imovelB7, imovelB8, imovelB9,
-  imovelB10, imovelB11, imovelB12, imovelB13, imovelB14, imovelB15, imovelB16, imovelB17, imovelB18, imovelB19,
-  imovelB20, imovelB21, imovelB22, imovelB23, imovelB24, imovelB25, imovelB26, imovelB27
-],
-
-    videoUrl: 'https://youtube.com/embed/Z-4NPAqXfGI', // substitua pelo correto
+    galeria: [imovelB1, imovelB2, imovelB3, imovelB4, imovelB5, imovelB6, imovelB7, imovelB8, imovelB9, imovelB10, imovelB11, imovelB12, imovelB13, imovelB14, imovelB15, imovelB16, imovelB17, imovelB18, imovelB19, imovelB20, imovelB21, imovelB22, imovelB23, imovelB24, imovelB25, imovelB26, imovelB27],
+    videoUrl: 'https://youtube.com/embed/Z-4NPAqXfGI', 
     pdfUrl: '/folhetos/FOLHETO.AG.pdf',
     anuncio: anuncioImovelB,
     especificacoes: especificacoesImovelB
   },
   'C': {
     titulo: 'Arkadio – World-Class Residence',
-    galeria: [imovelC1, imovelC2, imovelC3, imovelC4, imovelC5, imovelC6],
-    videoUrl: 'https://youtube.com/embed/thG4po12aIA', // substitua pelo correto
+    galeria: [imovelC1, imovelC2, imovelC3, imovelC4, imovelC5, imovelC6, imovelC7, imovelC8, imovelC9, imovelC10, imovelC11, imovelC12, imovelC13, imovelC14, imovelC15, imovelC16, imovelC17, imovelC18, imovelC19, imovelC20, imovelC21, imovelC22, imovelC23, imovelC24, imovelC25, imovelC26, imovelC27, imovelC28, imovelC29, imovelC30, imovelC31, imovelC32, imovelC33, imovelC34, imovelC35, imovelC36],
+    videoUrl: 'https://youtube.com/embed/thG4po12aIA', 
     pdfUrl: '/folhetos/FOLHETO.AR.pdf',
     anuncio: anuncioImovelC,
     especificacoes: especificacoesImovelC
   },
   'D': {
-    titulo: 'Skyline Residences',
-    galeria: [lancamento1, lancamento2, lancamento3],
+    titulo: 'MAC | Vila Clementino',
+    galeria: [imagemGenerica, imagemGenerica, imagemGenerica],
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     pdfUrl: '/folhetos/folheto-d.pdf',
-    anuncio: "🏙️ Skyline Residences – Modernidade e sofisticação no centro de São Paulo...",
-    especificacoes: { "Exemplo": "Dados do Skyline" }
+    anuncio: "MAC | Vila Clementino",
+    especificacoes: { "Exemplo": "Dados MAC | Vila Clementino" }
   },
   'E': {
-    titulo: 'Parque das Árvores',
-    galeria: [lancamento1, lancamento2, lancamento3],
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    titulo: 'Em breve novo lançamento!',
+    galeria: [imagemGenerica, imagemGenerica, imagemGenerica],
+    videoUrl: 'https://www.youtube.com/embed/yyyyy',
     pdfUrl: '/folhetos/folheto-e.pdf',
-    anuncio: "🌿 Parque das Árvores – Apartamentos de 3 e 4 suítes...",
-    especificacoes: { "Exemplo": "Dados do Parque das Árvores" }
+    anuncio: "Em breve novo lançamentos!",
+    especificacoes: { "Exemplo": "Em breve novo lançamento!" }
   },
   'F': {
-    titulo: 'Sunset Towers',
-    galeria: [lancamento1, lancamento2, lancamento3],
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    titulo: 'Em breve novo lançamento!',
+    galeria: [imagemGenerica, imagemGenerica, imagemGenerica],
+    videoUrl: 'https://www.youtube.com/embed/yyyy',
     pdfUrl: '/folhetos/folheto-f.pdf',
-    anuncio: "🌅 Sunset Towers – Vistas espetaculares na orla de Santos...",
-    especificacoes: { "Exemplo": "Dados do Sunset Towers" }
+    anuncio: "Em breve novos lançamento!",
+    especificacoes: { "Exemplo": "Em breve novo lançamento!" }
   }
 };
 
