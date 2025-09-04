@@ -28,10 +28,9 @@ function Contato() {
 
   return (
     <div className="container mt-4 page-content">
-      <h2 className="mb-4 text-left">Fale Comigo!</h2>
+      <h2>Fale Comigo!</h2>
       
-      <div className="contact-layout-container">
-
+      <div className="d-flex justify-content-center align-items-start gap-5">
         {/* Formulário de Contato no lado esquerdo */}
         <div className="contact-form-container">
           {formSubmitted ? (
