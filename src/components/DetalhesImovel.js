@@ -102,6 +102,33 @@ import imagemGenerica from '../assets/imagemGenerica.jpg';
 import lancamentoA1 from '../assets/MacClementino/lancamento-A-1.png';
 import lancamentoA2 from '../assets/MacClementino/lancamento-A-2.png';
 import lancamentoA3 from '../assets/MacClementino/lancamento-A-3.png';
+import lancamentoA4 from '../assets/MacClementino/lancamento-A-4.png';
+import lancamentoA5 from '../assets/MacClementino/lancamento-A-5.png';
+import lancamentoA6 from '../assets/MacClementino/lancamento-A-6.png';
+import lancamentoA7 from '../assets/MacClementino/lancamento-A-7.png';
+import lancamentoA8 from '../assets/MacClementino/lancamento-A-8.png';
+import lancamentoA9 from '../assets/MacClementino/lancamento-A-9.png';
+import lancamentoA10 from '../assets/MacClementino/lancamento-A-10.png';
+import lancamentoA11 from '../assets/MacClementino/lancamento-A-11.png';
+import lancamentoA12 from '../assets/MacClementino/lancamento-A-12.png';
+import lancamentoA13 from '../assets/MacClementino/lancamento-A-13.png';
+import lancamentoA14 from '../assets/MacClementino/lancamento-A-14.png';
+import lancamentoA15 from '../assets/MacClementino/lancamento-A-15.png';
+import lancamentoA16 from '../assets/MacClementino/lancamento-A-16.png';
+import lancamentoA17 from '../assets/MacClementino/lancamento-A-17.png';
+import lancamentoA18 from '../assets/MacClementino/lancamento-A-18.png';
+import lancamentoA19 from '../assets/MacClementino/lancamento-A-19.png';
+import lancamentoA20 from '../assets/MacClementino/lancamento-A-20.png';
+import lancamentoA21 from '../assets/MacClementino/lancamento-A-21.png';
+import lancamentoA22 from '../assets/MacClementino/lancamento-A-22.png';
+import lancamentoA23 from '../assets/MacClementino/lancamento-A-23.png';
+import lancamentoA24 from '../assets/MacClementino/lancamento-A-24.png';
+import lancamentoA25 from '../assets/MacClementino/lancamento-A-25.png';
+import lancamentoA26 from '../assets/MacClementino/lancamento-A-26.png';
+import lancamentoA27 from '../assets/MacClementino/lancamento-A-27.png';
+import lancamentoA28 from '../assets/MacClementino/lancamento-A-28.png';
+import lancamentoA29 from '../assets/MacClementino/lancamento-A-29.png';
+import lancamentoA30 from '../assets/MacClementino/lancamento-A-30.png';
 
 
 
@@ -134,6 +161,23 @@ Um ícone internacional no Brooklin, assinado por Carlos Ott, com paisagismo de 
 Apartamentos de 107 a 180 m², até 4 suítes e lazer de resort a 112 m de altura.
 
 👉 Sofisticação, exclusividade e design internacional em um endereço único.
+`;
+
+const anuncioImovelD = `
+✨ MAC | Vila Clementino — Imóvel D ✨
+
+Localização nobre, projeto residencial exclusivo e lazer completo para toda a família.
+O Imóvel D traz tipologias projetadas para aconchego e experiência urbana: suítes amplas,
+planta bem distribuída e acabamentos de alto padrão.
+
+Destaques:
+• Unidades com 2, 3 e 4 suítes;
+• Piscina semiolímpica (25 m), spa e área de relaxamento;
+• Fitness completo climatizado e espaços gourmets;
+• Acabamento porcelanato e infraestrutura para automação;
+• Vagas privativas, bicicletário e gerador para áreas comuns.
+
+MAC Vila Clementino — morar com privacidade, proximidade e sofisticação.
 `;
 
 /* -------------------------------
@@ -290,6 +334,51 @@ const especificacoesImovelC = {
   ]
 };
 
+const especificacoesImovelD = {
+  "Geral": {
+    "Empreendimento": "MAC Vila Clementino - Torre Única (Imóvel D)",
+    "Endereço (exemplo)": "Av. Doutor Altino Arantes, Vila Clementino",
+    "Área do terreno": "2.354,75 m² (conforme folheto)",
+    "Torre": "1 torre",
+    "Pavimentos": "Subsolos (vagas e técnica) + Térreo (lazer) + Pavimentos tipo + Cobertura",
+    "Total de unidades (exemplo)": "100 unidades (confirme no memorial para fechamento)",
+    "Unidades por andar (exemplo)": "4 a 5 unidades por pavimento"
+  },
+  "Tipologias": {
+    "2 suítes": "81,50 m² — 1 vaga",
+    "3 suítes": "aprox. 121 m² — 2 vagas",
+    "3 suítes (Giardino)": "133,36 m² — garden privativo — 2 vagas",
+    "4 suítes": "157,49 m² e 169,80 m² (Giardino) — 3 vagas"
+  },
+  "Acabamentos": {
+    "Pisos": "Porcelanato nas áreas sociais e íntimas (medidas e modelo conforme memorial)",
+    "Paredes": "Reboco com acabamento com massa corrida e pintura acrílica",
+    "Pontos elétricos": "Infraestrutura para ar-condicionado tipo split e automação",
+    "Louças e metais": "Linha hidra/Deca (conferir memorial para referências exatas)",
+    "Esquadrias": "Alumínio com pintura eletrostática e vidros laminados onde indicado"
+  },
+  "Lazer & áreas comuns": {
+    "Piscina": "Piscina semiolímpica (25 m) + piscina infantil",
+    "Fitness": "Academia climatizada com equipamentos de primeira linha",
+    "Spa / Sauna": "Spa com sauna seca e sala de relaxamento",
+    "Gourmet": "Salão de festas e espaço gourmet com cozinha completa",
+    "Kids": "Brinquedoteca e playground",
+    "Esportes": "Quadra recreativa",
+    "Bem-estar": "Beauty room, espaço zen e jardins projetados"
+  },
+  "Sustentabilidade e infraestrutura": {
+    "Bicicletário": "Sim",
+    "Reuso de água": "Previsão para captação/reuso (verificar memorial)",
+    "Gerador": "Gerador para áreas comuns",
+    "Acessibilidade": "Áreas comuns e circulação adaptadas conforme ABNT"
+  },
+  "Segurança": {
+    "Controle de acesso": "Portaria e sistema de controle",
+    "CFTV": "Circuito interno nas áreas comuns",
+    "Capacidade técnica": "Infraestrutura para prevenção e combate a incêndio"
+  },
+};
+
 /* -------------------------------
    DADOS DOS IMÓVEIS
 -------------------------------- */
@@ -320,11 +409,11 @@ const dadosImoveis = {
   },
   'D': {
     titulo: 'MAC | Vila Clementino',
-    galeria: [lancamentoA1, lancamentoA2, lancamentoA3],
+    galeria: [lancamentoA1, lancamentoA2, lancamentoA3, lancamentoA4, lancamentoA5, lancamentoA6, lancamentoA7, lancamentoA8, lancamentoA9, lancamentoA10, lancamentoA11, lancamentoA12, lancamentoA13, lancamentoA14, lancamentoA15, lancamentoA16, lancamentoA17, lancamentoA18, lancamentoA19, lancamentoA20, lancamentoA21, lancamentoA22, lancamentoA23, lancamentoA24, lancamentoA25, lancamentoA26, lancamentoA27, lancamentoA28, lancamentoA29, lancamentoA30],
     videoUrl: 'https://www.youtube.com/embed/dJrAx2NdrrE',
     pdfUrl: '/folhetos/FOLHETO.MAC.pdf',
-    anuncio: "MAC | Vila Clementino",
-    especificacoes: { "Exemplo": "Dados MAC | Vila Clementino" }
+    anuncio: anuncioImovelD,
+    especificacoes: especificacoesImovelD
   },
   'E': {
     titulo: 'Em breve novo lançamento!',
