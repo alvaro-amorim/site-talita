@@ -108,7 +108,6 @@ import lancamentoA6 from '../assets/MacClementino/lancamento-A-6.png';
 import lancamentoA7 from '../assets/MacClementino/lancamento-A-7.png';
 import lancamentoA8 from '../assets/MacClementino/lancamento-A-8.png';
 import lancamentoA9 from '../assets/MacClementino/lancamento-A-9.png';
-import lancamentoA10 from '../assets/MacClementino/lancamento-A-10.png';
 import lancamentoA11 from '../assets/MacClementino/lancamento-A-11.png';
 import lancamentoA12 from '../assets/MacClementino/lancamento-A-12.png';
 import lancamentoA13 from '../assets/MacClementino/lancamento-A-13.png';
@@ -409,7 +408,7 @@ const dadosImoveis = {
   },
   'D': {
     titulo: 'MAC | Vila Clementino',
-    galeria: [lancamentoA1, lancamentoA2, lancamentoA3, lancamentoA4, lancamentoA5, lancamentoA6, lancamentoA7, lancamentoA8, lancamentoA9, lancamentoA10, lancamentoA11, lancamentoA12, lancamentoA13, lancamentoA14, lancamentoA15, lancamentoA16, lancamentoA17, lancamentoA18, lancamentoA19, lancamentoA20, lancamentoA21, lancamentoA22, lancamentoA23, lancamentoA24, lancamentoA25, lancamentoA26, lancamentoA27, lancamentoA28, lancamentoA29, lancamentoA30],
+    galeria: [lancamentoA1, lancamentoA2, lancamentoA3, lancamentoA4, lancamentoA5, lancamentoA6, lancamentoA7, lancamentoA8, lancamentoA9, lancamentoA11, lancamentoA12, lancamentoA13, lancamentoA14, lancamentoA15, lancamentoA16, lancamentoA17, lancamentoA18, lancamentoA19, lancamentoA20, lancamentoA21, lancamentoA22, lancamentoA23, lancamentoA24, lancamentoA25, lancamentoA26, lancamentoA27, lancamentoA28, lancamentoA29, lancamentoA30],
     videoUrl: 'https://www.youtube.com/embed/dJrAx2NdrrE',
     pdfUrl: '/folhetos/FOLHETO.MAC.pdf',
     anuncio: anuncioImovelD,
