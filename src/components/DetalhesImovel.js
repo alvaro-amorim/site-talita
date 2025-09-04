@@ -405,7 +405,7 @@ const dadosImoveis = {
     videoUrl: 'https://youtube.com/embed/thG4po12aIA', 
     pdfUrl: '/folhetos/FOLHETO.AR.pdf',
     anuncio: anuncioImovelC,
-    especificacoes: especificacoesImovelC
+    especificacoes: especificacoesImovelC,
   },
   'D': {
     titulo: 'MAC | Vila Clementino',
@@ -413,7 +413,7 @@ const dadosImoveis = {
     videoUrl: 'https://www.youtube.com/embed/dJrAx2NdrrE',
     pdfUrl: '/folhetos/FOLHETO.MAC.pdf',
     anuncio: anuncioImovelD,
-    especificacoes: especificacoesImovelD
+    especificacoes: especificacoesImovelD,
   },
   'E': {
     titulo: 'Em breve novo lançamento!',
