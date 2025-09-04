@@ -3,6 +3,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CardImovel from './CardImovel';
+import './Imoveis.css';
+
 
 // Importe as imagens dos imóveis aqui
 import imovel1 from '../assets/BlueMarine/imovel-A-1.png';
@@ -34,7 +36,7 @@ function Imoveis() {
 
   return (
     <section id="imoveis" className="container my-5 page-content">
-      <h2 className="text-center mb-4">Imóveis à venda</h2>
+      <h2 className="mb-4">Imóveis à venda</h2>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {listaDeImoveis.map(imovel => (
           <div key={imovel.id} className="col">

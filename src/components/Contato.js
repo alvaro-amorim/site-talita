@@ -30,7 +30,7 @@ function Contato() {
     <div className="container mt-4 page-content">
       <h2>Fale Comigo!</h2>
       
-      <div className="d-flex justify-content-center align-items-start gap-5">
+      <div className="justify-content-center align-items-start gap-5">
         {/* Formulário de Contato no lado esquerdo */}
         <div className="contact-form-container">
           {formSubmitted ? (
